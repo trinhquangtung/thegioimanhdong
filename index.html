@@ -4,39 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE GIOI MANH DONG</title>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.js" />
   </head>
   <body>
     <div id="wrapper">
       <div id="header">
         <div id="container">
           <div class="logo-header">
-            <a href="" id="logo"><img src="img/z5291167210176_e94b8369419597e0a0ca9559d9f5e064.jpg" alt=""></a>
+            <a href="" id="logo"
+              ><img
+                src="img/z5291167210176_e94b8369419597e0a0ca9559d9f5e064.jpg"
+                alt=""
+            /></a>
             <a href="" id="name">THẾ GIỚI MANH ĐỘNG</a>
           </div>
-          <!-- <div id="search">
-            <input type="search"  placeholder="Search..." /></li>
-          </div> -->
           <div class="box">
             <div class="container-1">
-                <span class="icon"><i class="fa fa-search"></i></span>
-                <input type="search" id="search" placeholder="Search..." />
+              <span class="icon"><i class="fa fa-search"></i></span>
+              <input type="search" id="search" placeholder="Search..." />
             </div>
           </div>
-            <ul id="nav">
-
-          <li><a href="">GIỎ HÀNG</a></li>
-          <li><a href="">ĐĂNG NHẬP</a></li>
-        </ul>
-        
+          <ul id="nav">
+            <li><a href="">GIỎ HÀNG</a></li>
+            <li><a href="">ĐĂNG NHẬP</a></li>
+          </ul>
         </div>
-        
       </div>
       <div id="slider">
         <div id="category">
@@ -48,9 +54,35 @@
             <li><a href="">Google</a></li>
             <li><a href="">Realme</a></li>
           </ul>
-                  </div>
+        </div>
+        <div class="slider">
+          <div class="slide" id="slide-1">1</div>
+          <div class="slide" id="slide-2">2</div>
+          <div class="slide" id="slide-3">3</div>
+          <div class="slide" id="slide-4">4</div>
+          <div class="slide" id="slide-5">5</div>
+        </div>
       </div>
-      <div id="content"></div>
+      <div id="content">
+        <div id="dp_menu" class="dp_menu">
+          <button><span>MENU</span></button>
+          <ul class="main-menu" style="display: none">
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="https://www.daipho.com/gioi-thieu/">Giới thiệu</a></li>
+            <li><a href="https://www.daipho.com/lien-he/">Liên hệ</a></li>
+          </ul>
+        </div>
+        <script>
+          $(document).ready(function(){
+	$("button").click(function(){
+		$("#dp_menu > ul").toggle(500);
+		$("#dp_menu").toggleClass("show");
+	});
+});
+        </script>
+      </div>
       <div id="footer"></div>
     </div>
   </body>

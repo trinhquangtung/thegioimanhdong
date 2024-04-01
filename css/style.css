@@ -1,54 +1,60 @@
-*{margin : 0px;
+* {
+    margin: 0px;
     padding: 0px;
-    box-sizing: border-box}
+    box-sizing: border-box
+}
+
 #body {
-        font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-    
-#wrapper{
-}
-#header{
+
+#wrapper {}
+
+#header {
     font-family: 'Poppins', sans-serif;
     background-color: #378CE7;
 }
-#logo img{
+
+#logo img {
     position: relative;
+    margin-top: 10px;
     padding: 10px;
     max-width: 100px;
 }
-#name{
+
+#name {
     position: absolute;
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
     text-decoration: none;
-    color:white;
+    color: white;
 }
-#container{
+
+#container {
     display: flex;
     justify-content: space-around;
 
     justify-items: center;
 }
-#search{
-    margin-top: 15px; 
+
+#search {
+    margin-top: 15px;
 }
-#search input{
-    width: 400px;
-    height: 40px;
-    border-radius: 100px;
-    
-}
-.box{
+
+.box {
     margin-bottom: 20px;
 }
-.container-1{
+
+.container-1 {
     width: 300px;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
     mả
-  }
-  .container-1 input#search{
-    width: 300px;
+}
+
+.container-1 input#search {
+    width: 500px;
     height: 50px;
     background: #2b303b;
     border: none;
@@ -58,46 +64,56 @@
     padding-left: 45px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
-  }
-  .container-1 input#search::-webkit-input-placeholder {
+    border-radius: 50px;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
     color: #65737e;
- }
- .container-1 input#search:-moz-placeholder { /* Firefox 18- */
-    color: #65737e;  
- }
- .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
-    color: #65737e;  
- }
- .container-1 input#search:-ms-input-placeholder {  
-    color: #65737e;  
- }
- .container-1 .icon{
+}
+
+.container-1 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.container-1 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container-1 .icon {
     position: absolute;
     top: 50%;
     margin-left: 17px;
     margin-top: 27px;
     z-index: 1;
     color: #4f5b66;
-  }
-  .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
-    outline:none;
-    background: #ffffff;
-  }
-#nav ul{
-    
 }
 
-#nav li{
-    
+.container-1 input#search:hover,
+.container-1 input#search:focus,
+.container-1 input#search:active {
+    outline: none;
+    background: #ffffff;
 }
-#nav li a{
+
+#nav {
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+}
+
+#nav li a {
     text-decoration: none;
     color: white;
     padding: 0px 24px;
 }
 
- /* #nav-category{
+/* #nav-category{
     display: inline;
 }
 #nav-category li{
@@ -107,40 +123,159 @@
     text-decoration: none;
 }  */
 
-#category{
+#category {
     font-family: 'Poppins', sans-serif;
-    background-color: #DFF5FF; /* Màu nền của category */
+    background-color: #DFF5FF;
+    /* Màu nền của category */
 }
-  
+
 #container-category {
     margin: 0 auto;
-    padding: 24px; /* Thêm padding cho container-category */
-    max-width: 1200px; /* Độ rộng tối đa của container-category */
+    padding: 24px;
+    /* Thêm padding cho container-category */
+    max-width: 1200px;
+    /* Độ rộng tối đa của container-category */
 }
-  
+
 #nav-category {
-    
+
     margin-top: auto;
     display: flex;
-    flex-wrap: wrap; /* Cho phép các mục con xuống dòng khi không đủ không gian */
-    justify-content: center; /* Căn giữa các mục con */
-    list-style-type: none; /* Ẩn dấu hiệu danh sách */
-    padding: 0; /* Xóa padding mặc định của danh sách */
+    flex-wrap: wrap;
+    /* Cho phép các mục con xuống dòng khi không đủ không gian */
+    justify-content: center;
+    /* Căn giữa các mục con */
+    list-style-type: none;
+    /* Ẩn dấu hiệu danh sách */
+    padding: 0;
+    /* Xóa padding mặc định của danh sách */
 }
 
-  
+
 #nav-category li {
-    margin: 10px; /* Khoảng cách giữa các mục con */
+    margin: 10px;
+    /* Khoảng cách giữa các mục con */
 
 }
-  
+
 #nav-category li a {
     text-decoration: none;
-    color:  #6E3CBC; /* Màu chữ của các liên kết */
-    padding: 10px 20px; /* Padding cho mỗi mục */
-    border-radius: 50px; /* Bo tròn góc của mỗi mục */
+    color: #6E3CBC;
+    /* Màu chữ của các liên kết */
+    padding: 10px 20px;
+    /* Padding cho mỗi mục */
+    border-radius: 50px;
+    /* Bo tròn góc của mỗi mục */
 }
-  
+
 #nav-category li a:hover {
-    background-color: #98BAE7; /* Màu nền khi di chuột qua */
+    background-color: #98BAE7;
+    /* Màu nền khi di chuột qua */
+}
+
+body {
+    font-family: 'Play', sans-serif;
+}
+
+body:after {
+    display: table;
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+.slider {
+    background: red;
+    color: white;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+  
+#dp_menu {
+    /* padding: 12px; */
+    padding-top: 10px;
+    position: relative
+}
+
+#dp_menu button {
+    display: table;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+#dp_menu button span {
+    display: block;
+    padding: 12px;
+    float: left;
+    width: 152px;
+    background: #0086C5;
+    color: #FFF;
+}
+
+#dp_menu button:before {
+    content: "\2261";
+    display: table;
+    width: 24px;
+    padding: 12px;
+    font-weight: bold;
+    background: #B60101;
+    color: #FFF;
+    float: right
+}
+
+#dp_menu:before,
+#dp_menu:after,
+#dp_menu ul:before,
+#dp_menu ul:after {
+    content: " ";
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0
+}
+
+#dp_menu ul,
+#dp_menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+#dp_menu ul {
+    position: absolute;
+    width: 200px;
+    background: #CCC;
+}
+
+#dp_menu li {
+    display: block;
+    padding: 12px;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #999;
+    text-align: center
+}
+
+html body:after {
+    content: "\0064\0061\0069\0070\0068\006F\002E\0063\006F\006D";
+}
+
+#dp_menu.show button {
+    border-radius: 7px 7px 0 0;
+}
+
+#dp_menu.show button:before {
+    content: "\0058";
+}
+
+#dp_menu .sub-menu {
+    display: none
 }
