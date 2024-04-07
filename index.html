@@ -55,33 +55,184 @@
             <li><a href="">Realme</a></li>
           </ul>
         </div>
-        <div class="slider">
-          <div class="slide" id="slide-1">1</div>
-          <div class="slide" id="slide-2">2</div>
-          <div class="slide" id="slide-3">3</div>
-          <div class="slide" id="slide-4">4</div>
-          <div class="slide" id="slide-5">5</div>
+        <div class="slidershow">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="/img/slide 1.jpg" style="width: 100%" />
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/img/slide 2.jpg" style="width: 100%" />
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/img/slide 3.jpg" style="width: 100%" />
+              <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <script src="/style.js"></script>
         </div>
       </div>
       <div id="content">
-        <div id="dp_menu" class="dp_menu">
-          <button><span>MENU</span></button>
-          <ul class="main-menu" style="display: none">
-            <li><a href="#">Menu 1</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 3</a></li>
-            <li><a href="https://www.daipho.com/gioi-thieu/">Giới thiệu</a></li>
-            <li><a href="https://www.daipho.com/lien-he/">Liên hệ</a></li>
-          </ul>
+        <div class="filter">
+          <div class="menu-filter-1">
+            <p>Hãng sản xuất</p>
+            <ul>
+              <li><input type="checkbox" name="" id="" />Samsung</li>
+              <li><input type="checkbox" name="" id="" />Apple</li>
+              <li><input type="checkbox" name="" id="" />Xiaomi</li>
+              <li><input type="checkbox" name="" id="" />Oppo</li>
+              <li><input type="checkbox" name="" id="" />Google</li>
+              <li><input type="checkbox" name="" id="" />Realme</li>
+            </ul>
+          </div>
+          <div class="menu-filter-2">
+            <p>Mức giá</p>
+            <ul>
+              <li><input type="checkbox" name="" class="checkbox" />Samsung</li>
+              <li><input type="checkbox" name="" class="checkbox" />Apple</li>
+              <li><input type="checkbox" name="" class="checkbox" />Xiaomi</li>
+              <li><input type="checkbox" name="" class="checkbox" />Oppo</li>
+              <li><input type="checkbox" name="" class="checkbox" />Google</li>
+              <li><input type="checkbox" name="" class="checkbox" />Realme</li>
+            </ul>
+          </div>
+          <div class="menu-filter-3">
+            <p>Dung lượng</p>
+            <ul>
+              <li><input type="checkbox" name="" class="checkbox" />Samsung</li>
+              <li><input type="checkbox" name="" class="checkbox" />Apple</li>
+              <li><input type="checkbox" name="" class="checkbox" />Xiaomi</li>
+              <li><input type="checkbox" name="" class="checkbox" />Oppo</li>
+              <li><input type="checkbox" name="" class="checkbox" />Google</li>
+              <li><input type="checkbox" name="" class="checkbox" />Realme</li>
+            </ul>
+          </div>
+          <div class="menu-filter-4">
+            <p>Màn hình</p>
+            <ul>
+              <li><input type="checkbox" name="" class="checkbox" />Samsung</li>
+              <li><input type="checkbox" name="" class="checkbox" />Apple</li>
+              <li><input type="checkbox" name="" class="checkbox" />Xiaomi</li>
+              <li><input type="checkbox" name="" class="checkbox" />Oppo</li>
+              <li><input type="checkbox" name="" class="checkbox" />Google</li>
+              <li><input type="checkbox" name="" class="checkbox" />Realme</li>
+            </ul>
+          </div>
         </div>
-        <script>
-          $(document).ready(function(){
-	$("button").click(function(){
-		$("#dp_menu > ul").toggle(500);
-		$("#dp_menu").toggleClass("show");
-	});
-});
-        </script>
+        <div class="main-content">
+          <div class="headline">
+            <h3>Danh sách sản phẩm</h3>
+            <ul class="products">
+              <li>
+                <div class="product-item">
+                  <div class="product-top">
+                    <a href="" class="product-thumb">
+                      <img src="/img/product1.jpg" alt="">
+                    </a>  
+                    <a href="" class="buy-now">mua ngay</a>
+                  </div>
+                  <div class="product-info">
+                    <a href="" class="product-cat">Xiaomi</a>
+                  <a href="" class="product-name">Horny</a>
+                  <div class="product-price">2.99$</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <div class="product-top">
+                    <a href="" class="product-thumb">
+                      <img src="/img/product1.jpg" alt="">
+                    </a>  
+                    <a href="" class="buy-now">mua ngay</a>
+                  </div>
+                  <div class="product-info">
+                    <a href="" class="product-cat">Xiaomi</a>
+                  <a href="" class="product-name">Horny</a>
+                  <div class="product-price">2.99$</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <div class="product-top">
+                    <a href="" class="product-thumb">
+                      <img src="/img/product1.jpg" alt="">
+                    </a>  
+                    <a href="" class="buy-now">mua ngay</a>
+                  </div>
+                  <div class="product-info">
+                    <a href="" class="product-cat">Xiaomi</a>
+                  <a href="" class="product-name">Horny</a>
+                  <div class="product-price">2.99$</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <div class="product-top">
+                    <a href="" class="product-thumb">
+                      <img src="/img/product1.jpg" alt="">
+                    </a>  
+                    <a href="" class="buy-now">mua ngay</a>
+                  </div>
+                  <div class="product-info">
+                    <a href="" class="product-cat">Xiaomi</a>
+                  <a href="" class="product-name">Horny</a>
+                  <div class="product-price">2.99$</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <div class="product-top">
+                    <a href="" class="product-thumb">
+                      <img src="/img/product1.jpg" alt="">
+                    </a>  
+                    <a href="" class="buy-now">mua ngay</a>
+                  </div>
+                  <div class="product-info">
+                    <a href="" class="product-cat">Xiaomi</a>
+                  <a href="" class="product-name">Horny</a>
+                  <div class="product-price">2.99$</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <div class="product-top">
+                    <a href="" class="product-thumb">
+                      <img src="/img/product1.jpg" alt="">
+                    </a>  
+                    <a href="" class="buy-now">mua ngay</a>
+                  </div>
+                  <div class="product-info">
+                    <a href="" class="product-cat">Xiaomi</a>
+                  <a href="" class="product-name">Horny</a>
+                  <div class="product-price">2.99$</div>
+                  </div>
+                </div>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="footer"></div>
     </div>
